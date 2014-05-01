@@ -30,8 +30,8 @@
                         globalstrict: true
                     }
                 },
-                "Tools:CTags": {
-                    scriptUrl: "/packages/gh/zedapp/javascript-mode/ctags.js",
+                "Tools:Index": {
+                    scriptUrl: "/packages/gh/zedapp/javascript-mode/index.js",
                     inputs: {
                         text: true
                     },
@@ -54,7 +54,7 @@
 
             handlers: {
                 index: [
-                    "Tools:CTags"
+                    "Tools:Index"
                 ],
                 check: [
                     "Tools:Check"
