@@ -8,7 +8,7 @@ module.exports = function(info) {
        }
     });
     try {
-        var transformedCode = transform.transform(info.inputs.text);
+        var transformedCode = transform.transform(info.inputs.text).code;
         return javaScriptCheck({
             inputs: {
                 text: transformedCode

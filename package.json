@@ -1,7 +1,7 @@
 {
     "name": "JSX Mode",
     "uri": "gh:zedapp/jsx-mode",
-    "version": "0.1",
+    "version": "0.2",
     "description": "JSX support for Zed",
     "files": [
         "check.js",
