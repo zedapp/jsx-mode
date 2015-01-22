@@ -28,14 +28,16 @@
                         expr: true,
                         multistr: true,
                         globalstrict: true
-                    }
+                    },
+                    sandbox: "check"
                 },
                 "Tools:Index": {
                     scriptUrl: "/packages/gh/zedapp/javascript-mode/index.js",
                     inputs: {
                         text: true
                     },
-                    internal: true
+                    internal: true,
+                    sandbox: "index"
                 },
                 "Tools:Complete:Snippet": {
                     scriptUrl: "/default/command/snippet_completer.js",
@@ -48,7 +50,8 @@
                         setTimeout: "setTimeout(function() {\n\t${1}\n}, ${2:0})",
                         iterkeys: "Object.keys(${1:obj}).forEach(function(${2:key}) {\n\t${3}\n});"
                     },
-                    internal: true
+                    internal: true,
+                    sandbox: "complete"
                 }
             },
 
